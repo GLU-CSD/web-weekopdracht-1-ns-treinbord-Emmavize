@@ -11,6 +11,9 @@
     background-color: #f2f2f2;
     height: 335px;
     border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #middle {
@@ -20,6 +23,13 @@
     padding: 35px;
     box-sizing: border-box;
     border: 2px solid #000;
+    font-family: "Comic Sans MS";
+    display: grid;
+    grid-template-areas: "tijd treinsoort"
+                        "plaatsvanbestemming plaatsvanbestemming"
+                         "via via"
+                         "treinlengte treinlengte"
+                         "volgende volgende";
 }
 
 #right{
@@ -27,4 +37,43 @@
     height: 335px;
     background-color: rgb(0, 0, 106);
     border: 2px solid #000;
+}
+
+#tijd{
+    background-color: red;
+    grid-area: tijd;
+}
+
+#treinsoort{
+background-color: chartreuse;
+grid-area: treinsoort;
+}
+
+#bestemming{
+    background-color: yellow;
+    grid-area: plaatsvanbestemming;
+}
+
+#via{
+    background-color: blue;
+    grid-area: via;
+}
+
+#treinlengte{
+background-color: blueviolet;
+grid-area: treinlengte;
+}
+
+#volgende{
+background-color: cadetblue;
+grid-area: volgende;
+}
+
+#klok{
+    height: 195px;
+    width: 195px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    border: 2px solid #000;
+    
 }
